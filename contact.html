@@ -10,6 +10,12 @@
       <!-- Css -->
       <link href="css/bootstrap.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
+      <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+      <script type="text/javascript">
+         (function(){
+            emailjs.init("user_4cweelh9HSJQlRGF5F6uz");
+         })();
+      </script>
    </head>
    <body>
       <nav class="navbar navbar-default color-fill navbar-fixed-top">
@@ -46,7 +52,37 @@
                      Wherever your path is leading you <br>
                      Join us!
                   </h1>
-                  <h4><a href="mailto:hello@echoestemplate.com">yogacommune@gmail.com</a></h4>
+                  <div class="col-md-6 animate-box">
+                  <h3>Send A Message</h3>
+                  <form action="#" id="nameforid" method="post">
+                  <div class="row form-group">
+                  <div class="col-md-6">
+                  <!— <label for="fname">First Name</label> —>
+                  <input type="text" id="fname" class="form-control" placeholder="Ваше имя">
+                  </div>
+                  <div class="col-md-6">
+                  <!— <label for="lname">Last Name</label> —>
+                  <input type="text" id="lname" class="form-control" placeholder="Ваша фамилия">
+                  </div>
+                  </div>
+                  <div class="row form-group">
+                  <div class="col-md-12">
+                  <!— <label for="email">Email</label> —>
+                  <input type="text" id="email" class="form-control" placeholder="E-mail">
+                  </div>
+                  </div>
+                  <div class="row form-group">
+                  <div class="col-md-12">
+                  <!— <label for="message">Message</label> —>
+                  <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Что вы хотите узнать?"></textarea>
+                  </div>
+                  </div>
+                  <div class="form-group">
+                  <input type="submit" value="Send Message" class="btn btn-primary">
+                  </div>
+                  </form>
+                  </div>
+                  <h4><a href="sashalarionova1@mail.ru">yogacommune@gmail.com</a></h4>
                </div>
             </div>
             <div class="row margin-top-45">
@@ -58,6 +94,34 @@
          </div>
       </section>
       <!-- script -->
+      <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_4cweelh9HSJQlRGF5F6uz");
+   })();
+</script>
+<script>
+var myform = $("form#nameforid");
+myform.submit(function(event){
+event.preventDefault();
+
+// Change to your service ID, or keep using the default service
+var service_id = "default_service";
+var template_id = "template_lOE6IUI9";
+
+myform.find("button").text("Sending...");
+emailjs.sendForm(service_id,template_id,myform[0])
+
+.then(function(){
+alert("Sent!");
+myform.find("button").text("Send");
+}, function(err) {
+alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+myform.find("button").text("Send");
+});
+return false;
+});
+</script>
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/modernizr.js"></script>
