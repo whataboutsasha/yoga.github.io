@@ -94,6 +94,11 @@
          </div>
       </section>
       <!-- script -->
+    </script>
+          <script src="js/jquery.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/modernizr.js"></script>
+          <script src="js/script.js"></script>
       <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 <script type="text/javascript">
    (function(){
@@ -104,14 +109,11 @@
 var myform = $("form#nameforid");
 myform.submit(function(event){
 event.preventDefault();
-
 // Change to your service ID, or keep using the default service
 var service_id = "default_service";
 var template_id = "template_lOE6IUI9";
-
 myform.find("button").text("Sending...");
 emailjs.sendForm(service_id,template_id,myform[0])
-
 .then(function(){
 alert("Sent!");
 myform.find("button").text("Send");
@@ -121,10 +123,6 @@ myform.find("button").text("Send");
 });
 return false;
 });
-</script>
-      <script src="js/jquery.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/modernizr.js"></script>
-      <script src="js/script.js"></script>
+
    </body>
 </html>
