@@ -1,162 +1,235 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <title>Yoga for everyone</title>
-      <!-- Css -->
-      <!— Modernizr JS —>
-      <script src="js/modernizr-2.6.2.min.js"></script>
-      <!— FOR IE9 below —>
-      <!--[if lt IE 9]>
-      <script src="js/respond.min.js"></script>
-      <![endif]-->
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Кориан-Сочи</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Изделия из искусственного камня в Сочи. Изготовление столешниц, подоконников, моек, барных стоек." />
+<meta name="keywords" content="искусственный, камень, Сочи, столешницы, подоконники, мойки, предприятие" />
+<meta name="author" content="Lada Gorbunova" />
 
-      <link href="css/bootstrap.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
-      <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-      <script type="text/javascript">
-         (function(){
-            emailjs.init("user_4cweelh9HSJQlRGF5F6uz");
-         })();
-      </script>
-   </head>
-   <body>
-      <nav class="navbar navbar-default color-fill navbar-fixed-top">
-         <div class="col-md-12">
-            <div class="nav">
-               <button class="btn-nav">
-               <span class="icon-bar top"></span>
-               <span class="icon-bar middle"></span>
-               <span class="icon-bar bottom"></span>
-               </button>
-            </div>
-            <a class="navbar-brand" href="index.html">
-            <img class="logo" src="img/word1.png" alt="logo">
-            </a>
-            <div class="nav-content hideNav hidden">
-               <ul class="nav-list vcenter">
-                  <li class="nav-item"><a class="item-anchor" href="index.html">Home</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="about.html">About Us</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="portfolio.html">Classes</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="contact.html">Contact</a></li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <section>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1>
-                    Yoga is for everyone <br>
-                     Whatever your beliefs <br>
-                     Regardless of your body type <br>
-                     Whatever your age <br>
-                     Wherever your path is leading you <br>
-                     Join us!
-                  </h1>
-                  <div class="col-md-6 animate-box">
-                  <h3>Send A Message</h3>
-                  <form action="#" id="nameforid" method="post">
-                  <div class="row form-group">
-                  <div class="col-md-6">
-                  <!— <label for="fname">First Name</label> —>
-                  <input type="text" id="fname" class="form-control" placeholder="Ваше имя">
-                  </div>
-                  <div class="col-md-6">
-                  <!— <label for="lname">Last Name</label> —>
-                  <input type="text" id="lname" class="form-control" placeholder="Ваша фамилия">
-                  </div>
-                  </div>
-                  <div class="row form-group">
-                  <div class="col-md-12">
-                  <!— <label for="email">Email</label> —>
-                  <input type="text" id="email" class="form-control" placeholder="E-mail">
-                  </div>
-                  </div>
-                  <div class="row form-group">
-                  <div class="col-md-12">
-                  <!— <label for="message">Message</label> —>
-                  <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Что вы хотите узнать?"></textarea>
-                  </div>
-                  </div>
-                  <div class="form-group">
-                  <input type="submit" value="Send Message" class="btn btn-primary">
-                  </div>
-                  </form>
-                  </div>
-                  <h4><a href="sashalarionova1@mail.ru">yogacommune@gmail.com</a></h4>
-               </div>
-            </div>
-            <div class="row margin-top-45">
-               <div class="col-md-12">
-                  <img class="img-responsive margin-top-45" src="img/y1.jpg" alt="me">
-               </div>
-            </div>
-         </div>
-         </div>
-      </section>
-      <!-- script --><!— jQuery —>
-      <script src="js/jquery.min.js"></script>
-      <!— jQuery Easing —>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <!— Bootstrap —>
-      <script src="js/bootstrap.min.js"></script>
-      <!— Waypoints —>
-      <script src="js/jquery.waypoints.min.js"></script>
-      <!— Stellar Parallax —>
-      <script src="js/jquery.stellar.min.js"></script>
-      <!— Carousel —>
-      <script src="js/owl.carousel.min.js"></script>
-      <!— Flexslider —>
-      <script src="js/jquery.flexslider-min.js"></script>
-      <!— countTo —>
-      <script src="js/jquery.countTo.js"></script>
-      <!— Magnific Popup —>
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/magnific-popup-options.js"></script>
-      <!— Google Map —>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqY.."></script>
-      <script src="js/google_map.js"></script>
-      <!— Main —>
+<!— Place favicon.ico and apple-touch-icon.png in the root directory —>
+<link rel="shortcut icon" href="file:///Users/ladagorbunova/Desktop/%D0%A1%D0%B0%D0%B8%CC%86%D1%82/%D1%82%D0%B5%D0%BC%D0%BF%D0%BB%D0%B5%D0%B8%CC%86%D1%82/images/1.jpg">
 
-      <script src="js/main.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,.." rel="stylesheet">
 
-      <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-      <script type="text/javascript">
-      (function(){
-      emailjs.init("user_xoRsHwp2tfHU1SOQCjzZ7");
-      })();
-      </script>
+<!— Animate.css —>
+<link rel="stylesheet" href="css/animate.css">
+<!— Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!— Bootstrap —>
+<link rel="stylesheet" href="css/bootstrap.css">
 
+<!— Flexslider —>
+<link rel="stylesheet" href="css/flexslider.css">
 
+<link rel="stylesheet" href="css/style.css">
 
-      <script>
-      var myform = $("form#nameforid");
-      myform.submit(function(event){
-      event.preventDefault();
+<!— Modernizr JS —>
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!— FOR IE9 below —>
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
 
-      // Change to your service ID, or keep using the default service
-      var service_id = "default_service";
-      var template_id = "template_lOE6IUI9";
+</head>
+<body>
 
-      myform.find("button").text("Sending...");
-      emailjs.sendForm(service_id,template_id,myform[0])
+<nav id="fh5co-main-nav" role="navigation">
+<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active"><i></i></a>
+<div class="js-fullheight fh5co-table">
+<div class="fh5co-table-cell js-fullheight">
+<ul>
+<li><a href="index.html">Главная</a></li>
+<li><a href="work.html">Галерея работ</a></li>
+<li><a href="product.html">Цветовая гамма</a></li>
+<li><a href="about.html">О нас</a></li>
+<li><a href="contact.html">Контакты</a></li>
+</ul>
+<p>corian-sochi@mail.ru <br> +7 918 404 64 54</p>
+<p class="fh5co-social-icon">
+<a href="https://www.instagram.com/laxvys/"><i class="icon-instagram"></i></a>
+</div>
+</div>
+</nav>
 
-      .then(function(){
-      alert("Sent!");
-      myform.find("button").text("Send");
-      }, function(err) {
-      alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-      myform.find("button").text("Send");
-      });
-      return false;
-      });
+<div id="fh5co-page">
+<header>
+<div class="container">
+<div class="fh5co-navbar-brand">
+<h1 class="text-center"><a class="fh5co-logo" href="index.html">CORIAN-SOCHI</a></h1>
+<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+</div>
+</div>
+</header>
+<div id="fh5co-intro-section">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 animate-box text-center">
+<h2 class="intro-heading">Контакты</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 animate-box">
+<h3>Send A Message</h3>
+<form action="#" id="nameforid" method="post">
+<div class="row form-group">
+<div class="col-md-6">
+<!— <label for="fname">First Name</label> —>
+<input type="text" id="fname" class="form-control" placeholder="Ваше имя">
+</div>
+<div class="col-md-6">
+<!— <label for="lname">Last Name</label> —>
+<input type="text" id="lname" class="form-control" placeholder="Ваша фамилия">
+</div>
+</div>
+<div class="row form-group">
+<div class="col-md-12">
+<!— <label for="email">Email</label> —>
+<input type="text" id="email" class="form-control" placeholder="E-mail">
+</div>
+</div>
+<div class="row form-group">
+<div class="col-md-12">
+<!— <label for="message">Message</label> —>
+<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Что вы хотите узнать?"></textarea>
+</div>
+</div>
+<div class="form-group">
+<input type="submit" value="Send Message" class="btn btn-primary">
+</div>
+</form>
+</div>
+<div id="fh5co-contact-section">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-md-push-1 animate-box">
+<ul class="contact-info">
+<h2>Свяжитесь с нами:</h2>
+<li><i class="icon-location-pin"></i>Сочи, ул. Гагарина, 76/4</li>
+<li><i
 
+class="icon-phone2"></i>+7-918-404-64-54</li>
+<li><i class="icon-mail"></i><a href="#">corian-sochi@mail.ru</a></li>
+<li><i class="icon-globe2"></i><a href="http://www.corian-sochi.com/">www.corian-sochi.com</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="fh5co-counters" style="background-image: url(images/hero.jpg);" data-stellar-background-ratio="0.5" id="counter-animate">
+<div class="fh5co-narrow-content animate-box">
+<div class="row" >
+<div class="col-md-4 text-center">
+<span class="fh5co-counter js-counter" data-from="0" data-to="13" data-speed="4000" data-refresh-interval="50"></span>
+<span class="fh5co-counter-label">лет работы</span>
+</div>
+<div class="col-md-4 text-center">
+<span class="fh5co-counter-label">БОЛЕЕ</span>
+<span class="fh5co-counter js-counter" data-from="0" data-to="1500" data-speed="4000" data-refresh-interval="50"></span>
+<span class="fh5co-counter-label">выполненных заказов</span>
+</div>
+<div class="col-md-4 text-center">
+<span class="fh5co-counter js-counter" data-from="0" data-to="70" data-speed="4000" data-refresh-interval="50"></span>
+<span class="fh5co-counter-label">партнёров</span>
+</div>
+</div>
+</div>
+</div>
+
+<footer>
+<div id="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<p>Искусственный камень – современный композитный материал, близкий по характеристикам к природному камню, но более доступный. Он весит гораздо меньше природного аналога, что делает удобнее его транспортировку и монтаж. Современные технологии производства обеспечивают прочность, износостойкость и ремонтопригодность.</p>
+</div>
+
+<div class="col-md-4 col-md-offset-3 text-right">
+<h3 class="section-title">Меню</h3>
+<ul>
+<li><a href="https://ladagorbunova.neocities.org/work.html">Галерея работ</a></li>
+<li><a href="https://ladagorbunova.neocities.org/product.html">Цветовая гамма</a></li>
+<li><a href="https://ladagorbunova.neocities.org/about.html">О нас</a></li>
+<li><a href="https://ladagorbunova.neocities.org/contact.html">Контакты</a></li>
+<li><p class="fh5co-social-icon">
+<a href="https://www.instagram.com/laxvys/"><i class="icon-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="row copy-right">
+<div class="col-md-6 col-md-offset-3 text-center">
+<p>All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+
+<div class="gototop js-top">
+<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!— jQuery —>
+<script src="js/jquery.min.js"></script>
+<!— jQuery Easing —>
+<script src="js/jquery.easing.1.3.js"></script>
+<!— Bootstrap —>
+<script src="js/bootstrap.min.js"></script>
+<!— Waypoints —>
+<script src="js/jquery.waypoints.min.js"></script>
+<!— Stellar Parallax —>
+<script src="js/jquery.stellar.min.js"></script>
+<!— Carousel —>
+<script src="js/owl.carousel.min.js"></script>
+<!— Flexslider —>
+<script src="js/jquery.flexslider-min.js"></script>
+<!— countTo —>
+<script src="js/jquery.countTo.js"></script>
+<!— Magnific Popup —>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!— Google Map —>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqY.."></script>
+<script src="js/google_map.js"></script>
+<!— Main —>
+<script src="js/main.js"></script>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<script type="text/javascript">
+(function(){
+emailjs.init("user_xoRsHwp2tfHU1SOQCjzZ7");
+})();
 </script>
-   </body>
+
+<script>
+var myform = $("form#nameforid");
+myform.submit(function(event){
+event.preventDefault();
+
+// Change to your service ID, or keep using the default service
+var service_id = "default_service";
+var template_id = "template_lOE6IUI9";
+
+myform.find("button").text("Sending...");
+emailjs.sendForm(service_id,template_id,myform[0])
+
+.then(function(){
+alert("Sent!");
+myform.find("button").text("Send");
+}, function(err) {
+alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+myform.find("button").text("Send");
+});
+return false;
+});
+</script>
+</body>
 </html>
